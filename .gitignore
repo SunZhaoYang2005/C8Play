@@ -1,0 +1,12 @@
+# Keil MDK 编译输出
+MDK-ARM/C8Play/
+MDK-ARM/DebugConfig/
+
+# Keil 用户界面 / 选项文件
+*.uvoptx
+*.uvguix.*
+*.bak
+*.user
+
+# 其他
+*.suo
