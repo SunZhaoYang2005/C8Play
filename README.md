@@ -1,5 +1,11 @@
 # C8Play — STM32F103C8T6 掌机（FreeRTOS）
 
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://github.com/SunZhaoYang2005/C8Play)
+[![MCU: STM32F103C8T6](https://img.shields.io/badge/MCU-STM32F103C8T6-green.svg)](https://github.com/SunZhaoYang2005/C8Play)
+[![RTOS: FreeRTOS](https://img.shields.io/badge/RTOS-FreeRTOS-yellowgreen.svg)](https://github.com/SunZhaoYang2005/C8Play)
+[![IDE: Keil MDK](https://img.shields.io/badge/IDE-Keil%20MDK-orange.svg)](https://github.com/SunZhaoYang2005/C8Play)
+
 一个基于 STM32F103C8T6（ DshanMCU-F103 板）与FreeRTOS的迷你掌机项目：OLED 屏幕 + 红外遥控 / 编码器 / MPU6050 体感三种输入，内置 俄罗斯方块、贪吃蛇、打砖块 三款游戏，最高分存入板载 W25Q64 Flash（双槽防断电丢档），并通过 UART自定义协议 与 PC 联调（命令控制 + 状态上报）。
 
 ## 1. 硬件
@@ -57,9 +63,10 @@ C8Play/
 
 ## 3. 构建与烧录
 
-1. 打开 MDK-ARM/C8Play.uvprojx
-2. 菜单 Project → Batch Build
-3. 产物：`MDK-ARM/C8Play/C8Play.hex`，用 ST-Link + STM32CubeProgrammer 烧录。
+1. 获取代码：`git clone git@github.com:SunZhaoYang2005/C8Play.git`
+2. 用 Keil MDK 打开 `MDK-ARM/C8Play.uvprojx`
+3. 菜单 Project → Batch Build
+4. 产物：`MDK-ARM/C8Play/C8Play.hex`，用 ST-Link + STM32CubeProgrammer 烧录。
 
 ## 4. 按键与操作
 
